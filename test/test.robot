@@ -53,7 +53,7 @@ user can book car and return it
     wait until page contains        Infotiv Car Rental
 
     #väljer datum för bokning av bil
-    input text                      id: start  03-20
+    input text                      id: start  03-30
     input text                      id: end    04-12
 
     #skriver in all inforamtion som behövs för att hyra en bil
