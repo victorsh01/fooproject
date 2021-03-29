@@ -3,13 +3,16 @@ Documentation  testing infotiv car rental
 
 Library     SeleniumLibrary
 
+*** Variables ***
+${BROWSER} = chrome
+
 *** Test Case ***
 user can create account and access all pages
     [Documentation]                 testar så att alla sidor fungerar som de ska och att man kan komma tillbaka till huvud menyn, skapar även nytt konto
     [Tags]                          test 1
 
     #testar så att man kan klicka på logan
-    Open browser                    about:blank     chrome
+    Open browser                    about:blank     ${BROWSER}
     Go to                           http://rental33.infotiv.net/
     wait until page contains        Infotiv Car Rental
     Click element                   id: logo
